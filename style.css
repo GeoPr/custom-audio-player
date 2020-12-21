@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #232332;
+  display: grid;
+  place-content: center;
+}
+.box {
+  display: grid;
+  row-gap: 10px;
+}
+.player {
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+  background: #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progress-body {
+  height: 3px;
+  border-radius: 50px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  margin: 0px 10px;
+}
+.progress-start-time {
+}
+.progress-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: orange;
+  cursor: pointer;
+  left: 20px;
+  transform: translate(-100%, 0%);
+}
+.progress-end-time {
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+}
+.button-prev {
+  transform: rotate(180deg) translateY(3px);
+}
+.button-play {
+  margin: 0px 20px;
+}
+.button-next {
+}
+.audio {
+  display: none;
+}
+.image {
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image img {
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+.title {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}

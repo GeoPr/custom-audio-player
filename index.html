@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/play.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="image" id="image"></div>
+        <div class="title" id="title"></div>
+        <div class="player" id="player">
+          <audio id="audio" class="audio"></audio>
+          <div class="progress">
+            <div class="progress-start-time" id="progress-start-time"></div>
+            <!-- <div class="progress-body" id="progress-body">
+            <div class="progress-circle" id="progress-circle"></div>
+            </div> -->
+            <input
+              type="range"
+              class="progress-range"
+              id="progress-range"
+            />
+            <div class="progress-end-time" id="progress-end-time"></div>
+          </div>
+          <div class="controls">
+            <button class="button button-prev">
+              <img src="images/icons/button.svg" alt="img" id="button-prev" />
+            </button>
+            <button class="button button-play">
+              <img src="images/icons/play.svg" alt="img" id="button-play" />
+            </button>
+            <button class="button button-next">
+              <img src="images/icons/button.svg" alt="img" id="button-next" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
